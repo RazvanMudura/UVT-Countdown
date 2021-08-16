@@ -2,7 +2,7 @@
 
 html {
   font-family: "Montserrat", sans-serif;
-  background-image: linear-gradient(to bottom right, #0d3b77, #3c73bb);
+  background-image: linear-gradient(to bottom right, #183059, #37578d);
   width: 100%;
   height: 100%;
 }
@@ -14,7 +14,7 @@ html {
 #title {
   display: flex;
   justify-content: center;
-  color: #e4ac04;
+  color: #f0a202;
   font-size: 5vh;
 }
 
@@ -30,8 +30,8 @@ html {
   width: 14vh;
   height: 11vh;
   font-size: 2vh;
-  color: #3f7ed1;
-  background-color: #e4ac04;
+  color: #213c6d;
+  background-color: #f0a202;
   border-radius: 1vh;
   border: 0.5vh solid black;
   display: flex;
