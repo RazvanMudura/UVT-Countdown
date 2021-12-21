@@ -2,14 +2,6 @@ let countDownDate = new Date("Sep 20, 2021 09:00:00").getTime();
 let countdown = document.getElementById("countdown");
 let ended = false;
 
-const sync = () => {
-  let vid = document.querySelector("video");
-  let aud = document.querySelector("audio");
-
-  aud.currentTime = vid.currentTime;
-  aud.play();
-};
-
 const timer = () => {
   let today = new Date().getTime();
   let timeleft = countDownDate - today;
@@ -31,22 +23,14 @@ const timer = () => {
       video.autoplay = true;
 
       timeUp.innerText = "Gata cu joaca bro \n Du-te si salveza-ti patria";
-      timeUp.id = "box";
-      timeUp.style.margin = "auto";
-      timeUp.style.width = "50%";
-      timeUp.style.fontSize = "40px";
+      timeUp.id = "timeUp";
 
       document.getElementById("container").appendChild(timeUp);
       document.getElementById("container").appendChild(video);
       document.getElementById("container").addEventListener("click", () => {
         let response = audio.play();
 
-        if (response !== undefined)
-          response
-            .then((_) => {
-              sync();
-            })
-            .catch((error) => {});
+        if (response !== undefined) response.then((_) => {}).catch((error) => {});
       });
 
       ended = true;

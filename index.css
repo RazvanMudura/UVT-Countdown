@@ -2,22 +2,32 @@
 
 html {
   font-family: "Montserrat", sans-serif;
-  background-image: linear-gradient(to bottom right, #183059, #37578d);
+  background: linear-gradient(to bottom right, #183059, #37578d) fixed;
 }
 
 body {
   padding: 50px;
 }
 
-#container {
-  margin: 10vh;
+img {
+  background-color: white;
+  display: block;
+  margin: 30px auto;
+  width: 25%;
+  border: 0.5vh solid black;
+  border-radius: 1vh;
+}
+
+video {
+  width: 50%;
+  display: block;
+  margin: auto;
 }
 
 #title {
-  display: flex;
-  justify-content: center;
+  text-align: center;
   color: #f0a202;
-  font-size: 5vh;
+  font-size: 3rem;
 }
 
 #countdown {
@@ -29,18 +39,27 @@ body {
 
 #box {
   margin: 3vh;
-  margin-bottom: 50px;
   width: 18vh;
   height: 11vh;
-  font-size: 2vh;
   color: #213c6d;
   background-color: #f0a202;
   border-radius: 1vh;
   border: 0.5vh solid black;
   display: flex;
-  flex-direction: column;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#timeUp {
+  margin: 0 auto;
+  font-size: 40px;
   text-align: center;
+  color: #213c6d;
+  background-color: #f0a202;
+  border: 0.5vh solid black;
+  border-radius: 1vh;
+  margin: 3vh;
 }
 
 #days,
@@ -48,18 +67,4 @@ body {
 #minutes,
 #seconds {
   font-size: 4vh;
-}
-
-img {
-  background-color: white;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-  border: 0.5vh solid black;
-  border-radius: 1vh;
-}
-
-video {
-  width: 100%;
 }
